@@ -21,13 +21,13 @@ function getComputerChoice() {
   let choice;
   if (random === 1) {
     choice = "rock";
-    computerImg.src = "../img/rock-computer.png";
+    computerImg.src = "./img/rock-computer.png";
   } else if (random === 2) {
     choice = "paper";
-    computerImg.src = "../img/paper-computer.png";
+    computerImg.src = "./img/paper-computer.png";
   } else if (random === 3) {
     choice = "scissors";
-    computerImg.src = "../img/scissors-computer.png";
+    computerImg.src = "./img/scissors-computer.png";
   }
   return choice;
 }
@@ -36,7 +36,7 @@ function getComputerChoice() {
 const rock = document
   .querySelector(".rock")
   .addEventListener("click", function () {
-    playerImg.src = "../img/rock-player.png";
+    playerImg.src = "./img/rock-player.png";
     playRound("rock", getComputerChoice());
   });
 
@@ -44,7 +44,7 @@ const rock = document
 const paper = document
   .querySelector(".paper")
   .addEventListener("click", function () {
-    playerImg.src = "../img/paper-player.png";
+    playerImg.src = "./img/paper-player.png";
     playRound("paper", getComputerChoice());
   });
 
@@ -52,7 +52,7 @@ const paper = document
 const scissors = document
   .querySelector(".scissors")
   .addEventListener("click", function () {
-    playerImg.src = "../img/scissors-player.png";
+    playerImg.src = "./img/scissors-player.png";
     playRound("scissors", getComputerChoice());
   });
 
@@ -143,6 +143,6 @@ btnAgain.addEventListener("click", function () {
   computerscoreEl.textContent = computerScore;
   playerscoreEl.textContent = playerScore;
   drawscoreEl.textContent = draw;
-  playerImg.src = "../img/rock-player.png";
-  computerImg.src = "../img/rock-computer.png";
+  playerImg.src = "./img/rock-player.png";
+  computerImg.src = "./img/rock-computer.png";
 });
