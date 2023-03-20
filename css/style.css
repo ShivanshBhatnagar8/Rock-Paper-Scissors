@@ -19,7 +19,6 @@ body {
 img {
   display: block;
   width: 15%;
-  -webkit-filter: grayscale(1) invert(1);
   filter: grayscale(1) invert(1);
 }
 .container {
