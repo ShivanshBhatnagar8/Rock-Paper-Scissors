@@ -4,8 +4,63 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="script.js"></script>
-    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/query.css" />
+    <script src="./script.js" defer></script>
+    <title>Rock-Paper-Scissors</title>
   </head>
-  <body></body>
+  <body>
+    <main>
+      <header class="header">
+        <div class="container">
+          <h1 class="title">Rock paper scissors</h1>
+          <button class="again">Play Again</button>
+          <div class="score-section">
+            <div class="player-condition">
+              <h2>Player Score</h2>
+              <span class="player-score">0</span>
+            </div>
+            <div class="draw-condition">
+              <h2>Draw</h2>
+              <span class="draw">0</span>
+            </div>
+            <div class="computer-condition">
+              <h2>Computer Score</h2>
+              <span class="computer-score">0</span>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="img-section">
+        <div class="img-block">
+          <img
+            class="player-choice-img"
+            src="./img/rock-player.png"
+            alt="fist of player"
+          />
+          <h3>V/S</h3>
+          <img
+            class="computer-choice-img"
+            src="./img/rock-computer.png"
+            alt="fist of player"
+          />
+        </div>
+      </section>
+      <section class="button-section">
+        <button class="rock">ROCK</button>
+        <button class="paper">PAPER</button>
+        <button class="scissors">SCISSORS</button>
+      </section>
+    </main>
+    <div class="popup hidden">
+      <div class="container">
+        <div class="popup-content hidden">
+          <h4 class="popup-heading"></h4>
+          <a href="#" class="btn--close">&Cross;</a>
+          <p class="popup-text"></p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
