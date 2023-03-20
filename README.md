@@ -1,10 +1,10 @@
 # ROCK-PAPER-SCISSORS
 
-This repository contains the logic behind the working of the rock paper scissors game in javascript.
+This repository contains the game of Rock-Paper-Scissors which was made with the help of HTML,CSS and JavaScript. This game is fully functional with the help of DOM Manipulation with the help of JavaScript.
 
 ## 🛠 Skills
 
-Javascript
+HTML,CSS,Javascript
 
 ## Authors
 
@@ -12,4 +12,4 @@ Javascript
 
 ## Important Note
 
-The UI is still needed to be designed using HTML and CSS.
+The game is functional now and responsive as well.
