@@ -92,6 +92,9 @@ function playRound(playerSelection, computerSelection) {
 
   //Winning Condition
   if (playerScore === 5) {
+     document.getElementById("rock").disabled = true;
+    document.getElementById("paper").disabled = true;
+    document.getElementById("scissors").disabled = true;
     popup.classList.remove("hidden");
     popupContent.classList.remove("hidden");
     popupContent.setAttribute(
@@ -102,6 +105,9 @@ function playRound(playerSelection, computerSelection) {
     p.textContent =
       "You won this rock paper and scissors battle against the computer.Congratulations! You are awesome. Click on Play Again button to play again. Good luck 👍.";
   } else if (computerScore == 5) {
+     document.getElementById("rock").disabled = true;
+    document.getElementById("paper").disabled = true;
+    document.getElementById("scissors").disabled = true;
     popup.classList.remove("hidden");
     popupContent.classList.remove("hidden");
     popupContent.setAttribute(
@@ -112,6 +118,9 @@ function playRound(playerSelection, computerSelection) {
     p.textContent =
       "Sorry to say but you lost this rock paper and scissors battle against the computer.Don't be sad you can try again. Click on Play Again button to play again. Good luck 👍. ";
   } else if (draw === 5) {
+     document.getElementById("rock").disabled = true;
+    document.getElementById("paper").disabled = true;
+    document.getElementById("scissors").disabled = true;
     popup.classList.remove("hidden");
     popupContent.classList.remove("hidden");
     popupContent.setAttribute(
@@ -145,4 +154,7 @@ btnAgain.addEventListener("click", function () {
   drawscoreEl.textContent = draw;
   playerImg.src = "./img/rock-player.png";
   computerImg.src = "./img/rock-computer.png";
+  document.getElementById("rock").disabled = false;
+  document.getElementById("paper").disabled = false;
+  document.getElementById("scissors").disabled = false;
 });
